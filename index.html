@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
     <link rel= "stylesheet" type= "text/css" href="css/style.css">
     <link rel="preconnect" href= "https: //fonts.gstatic. com">
@@ -16,7 +18,7 @@
         <h2 class="logo">Portfo<span>lio</span></h2>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="#about">About Me</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -28,12 +30,6 @@
         <h4>Hello, my name is</h4>
         <h1><span>Zino</span> Van't Hek</h1>
         <h3>Im a Data scientist</h3>
-        <div class="newslatter">
-            <form>
-                <input type="email" name="email" id="mail" placeholder="Entere Your Email">
-                <input type="submit" name="submit" value="Lets Start"  >
-            </form>
-        </div>
     </div>
 </div>
 
@@ -105,6 +101,36 @@
                 </div>
             </div>
         </div>
+    </section>
+    <!----contact section start---->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>If You Have Any Project In Your Mind</h4>
+            <p>I'm a Data Scientist - Creating maching learning algorithms.</p>
+        
+        <div class="list">
+            <li><a>+34 677 82 97 17</a></li>
+            <li><a>zinovanthek@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/zino-van-t-hek/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.freelancer.com/u/zinovanthek" target="_blank">Freelancer</a></li>
+        </div>
+        </div>
+        <form class="newslatter">
+            <div class="form-group">
+                <label for="firstname">First name<span>*</span></label>
+                <input type="text" name="firstname" id="firstname" required class="form-element" placeholder="First Name">
+                <label for="lastname">Last name<span>*</span></label>
+                <input type="text" name="lastname" id="lastname" required class="form-element" placeholder="Last Name">
+                <label for="email">Email address<span>*</span></label>
+                <input type="email" name="email" id="email" required class="form-element" placeholder="Example@gmail.com">
+                <label for="message">What are you looking for?</label>
+                <textarea type="text" name="message" id="message" class="form-element" placeholder="I want to start a poject..."></textarea>
+            </div>
+            <div class="submit-group ">
+                <input class="send" type="submit" value="SEND MESSAGE" />
+            </div>
+        </form>
     </section>
 </body>
 </html>
