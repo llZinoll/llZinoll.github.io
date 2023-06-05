@@ -275,6 +275,54 @@ button:hover{
     bottom: 4px;
 }
 
+.carousel {
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .carousel-container {
+    display: flex;
+    gap: 0 10px;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+  }
+
+  .carousel-item {
+    flex: 1 0 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  .carousel-item.active {
+    opacity: 1;
+  }
+
+  @keyframes carousel-rotate {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-100%); }
+    60% { transform: translateX(-200%); }
+    80% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+
 .contact{
     width: 100%;
     padding-left: 10%;
