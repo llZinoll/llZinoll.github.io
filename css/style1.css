@@ -445,6 +445,7 @@ button:hover{
     font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
     display: revert;
+    overflow: revert;
 }
 
 /* navegador */
@@ -499,7 +500,7 @@ nav ul li a:hover{
 .btn:hover{
     transform: scale(1.2);
 }
-      
+}     
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
 /* Estilos para pantallas medianas (entre 601px y 1200px de ancho) */
 /* Por ejemplo: */
