@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
-    <link rel= "stylesheet" type= "text/css" href="css/style.css">
+    <link rel= "stylesheet" type= "text/css" href="css/style1.css">
     <link rel="preconnect" href= "https: //fonts.gstatic. com">
     <link href= "https://fonts. googleapis. .com/css2?family=Josefin+Sans:ital, wght@o, 100;0
     ,200;0, 300;0, 400;0, 500;0, 600;0, 700;1, 100;1, 200;1, 300;1, 400;1, 500;1, 600;1, 700&displa
@@ -20,9 +20,9 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#curriculum">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
         <a href="https://github.com/llZinoll" class= "btn" target="_blank">Github</a>
         </nav>
@@ -35,7 +35,7 @@
 </div>
 
     <!----About section start----> 
-    <section class="about">
+    <section class="about" id="about">
         <div class="main">
             <img src="img/Foto1.jpeg" >
             <div class="about-text">
@@ -105,7 +105,7 @@
     </section>
 
     <!-- Slider section start -->
-    <section>
+    <section id="projects">
         <div class="carousel">
           <div class="carousel-container">
             <div class="carousel-item">
@@ -122,8 +122,12 @@
             </div>
           </div>
         </div>
-    </section>
-    <!-- Slider section end -->
+        <div class="carousel-navigation">
+          <button id="prevButton">Anterior</button>
+          <button id="nextButton">Siguiente</button>
+        </div>
+      </section>
+    <!-- Java script -->
 
     <script src="Java/app.js"></script>
 
